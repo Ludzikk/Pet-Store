@@ -4,11 +4,12 @@
 	&__button {
 		position: relative;
 		font-size: 2rem;
-		padding: 0.3em 0.6em;
+		padding: 0.6em 0.9em;
 		text-transform: uppercase;
 		border: none;
+		color: $text-color-four;
 		background-color: $text-color-three;
-        cursor: pointer;
+		cursor: pointer;
 
 		&::before,
 		&::after {
@@ -29,5 +30,53 @@
 		&::after {
 			right: -5px;
 		}
+	}
+
+	&__products-box {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	&__product {
+		display: flex;
+		justify-content: space-between;
+		width: 400px;
+		height: 300px;
+		margin: 0 2em;
+
+		&-left {
+			width: 40%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+
+		&-right {
+			width: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+		}
+	}
+
+	&__productimg {
+		max-width: 80%;
+		max-height: 80%;
+	}
+
+	&__title {
+		padding: 1em 0;
+		font-size: 3.2rem;
+		text-align: center;
+	}
+
+	&__productname {
+		font-size: 2.2rem;
+		font-weight: bold;
+	}
+
+	&__productdesc {
+		padding: 0.25em 0 1em 0;
 	}
 }

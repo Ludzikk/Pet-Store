@@ -1,20 +1,57 @@
-@keyframes show-up {
-	from {
-		opacity: 0.2;
+@keyframes show-up-big {
+	0% {
+		opacity: 0;
+		background-image: url("../img/catheaderbig.jpg");
 	}
 
-    to {
-        opacity: 1;
-    }
-}
-
-
-@keyframes hide {
-	from {
+	25% {
 		opacity: 1;
 	}
 
-    to {
-        opacity: 0.2;
-    }
+	50% {
+		opacity: 0;
+		background-image: url("../img/catheaderbig.jpg");
+	}
+
+	60% {
+		background-image: url("../img/dogheaderbig.jpg");
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		background-image: url("../img/dogheaderbig.jpg");
+	}
+}
+
+@keyframes show-up-small {
+	0% {
+		opacity: 0;
+		background-image: url("../img/catheadersmall.jpg");
+	}
+
+	25% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+		background-image: url("../img/catheadersmall.jpg");
+	}
+
+	60% {
+		background-image: url("../img/dogheadersmall.jpg");
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		background-image: url("../img/dogheadersmall.jpg");
+	}
 }
