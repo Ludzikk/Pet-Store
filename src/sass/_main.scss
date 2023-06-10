@@ -1,0 +1,33 @@
+@use "colors.scss" as *;
+
+.main {
+	&__button {
+		position: relative;
+		font-size: 2rem;
+		padding: 0.3em 0.6em;
+		text-transform: uppercase;
+		border: none;
+		background-color: $text-color-three;
+        cursor: pointer;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 15px;
+			transform: skew(-10deg);
+			background-color: $text-color-three;
+			z-index: -1;
+		}
+
+		&::before {
+			left: -5px;
+		}
+
+		&::after {
+			right: -5px;
+		}
+	}
+}

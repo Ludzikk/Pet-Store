@@ -1,0 +1,48 @@
+@use "colors.scss" as *;
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__icon {
+		font-size: 2.4rem;
+		color: $text-color-two;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	&__item {
+		padding: 0 0.5em;
+	}
+
+	&__hamburger {
+		padding: 0.4em;
+		border: none;
+		background-color: transparent;
+	}
+
+	&__logo {
+		font-size: 3.6rem;
+
+		&-span {
+			color: $text-color-three;
+		}
+	}
+}

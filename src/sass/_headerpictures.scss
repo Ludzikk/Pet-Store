@@ -1,0 +1,23 @@
+.second-picture-small {
+	background-image: url("../img/dogheadersmall.jpg");
+}
+
+.second-picture-big {
+	background-image: url("../img/dogheaderbig.jpg");
+}
+
+.first-picture-small {
+	background-image: url("../img/catheadersmall.jpg");
+}
+
+.first-picture-big {
+	background-image: url("../img/catheaderbig.jpg");
+}
+
+.picture-anim {
+    animation: show-up 0.5s;
+}
+
+.picture-anim-hide {
+    animation: hide 0.5s;
+}
