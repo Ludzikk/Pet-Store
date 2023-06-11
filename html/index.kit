@@ -1,65 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- @include "meta.kit" -->
-    <title>Pet Store</title>
-    <!-- @include "link.kit" -->
-    <link rel="stylesheet" href="./dist/css/style.min.css">
-    <script src="https://kit.fontawesome.com/bdb2f8ae99.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- @include "nav.kit" -->
-    <!-- @include "header.kit" -->
-    <main class="main">
-        <div class="wrapper">
-        <section class="main__products">
-            <h2 class="main__title">Our Products</h2>
-             <div class="main__products-box">
-                <div class="main__product">
-                    <div class="main__product-left">
-                        <p class="main__productname">Pedigree</p>
-                        <p class="main__productdesc">Best food for your best friend</p>
-                        <button class="main__button">get it</button>
-                    </div>
-                    <div class="main__product-right">
-                        <img src="./dist/img/pedigree.png" alt="Pedigree food for dogs" class="main__productimg">
-                    </div>
-                </div>
-                <div class="main__product">
-                    <div class="main__product-left">
-                        <p class="main__productname">Reveal</p>
-                        <p class="main__productdesc">Best food for your cat</p>
-                        <button class="main__button">get it</button>
-                    </div>
-                    <div class="main__product-right">
-                        <img src="./dist/img/catfood.png" alt="Reveal food for cat" class="main__productimg">
-                    </div>
-                </div>
-                <div class="main__product">
-                    <div class="main__product-left">
-                        <p class="main__productname">DogToys</p>
-                        <p class="main__productdesc">Toy for your dog.</p>
-                        <button class="main__button">get it</button>
-                    </div>
-                    <div class="main__product-right">
-                        <img src="./dist/img/dogtoy.png" alt="Dog holding toy in his mount" class="main__productimg">
-                    </div>
-                </div>
-                <div class="main__product">
-                    <div class="main__product-left">
-                        <p class="main__productname">Aquatel</p>
-                        <p class="main__productdesc">Aquarium set for start</p>
-                        <button class="main__button">get it</button>
-                    </div>
-                    <div class="main__product-right">
-                        <img src="./dist/img/aquarium.png" alt="Aquarium" class="main__productimg">
-                    </div>
-                </div>
-             </div>      
-        </section>
-        <section style="height: 100vh;"></section>
-    </div>
-    </main>
-    <script src="./dist/js/index.min.js"></script>
-</body>
+	<head>
+		<!-- @include "meta.kit" -->
+		<title>Pet Store</title>
+		<!-- @include "link.kit" -->
+		<link rel="stylesheet" href="./dist/css/style.min.css" />
+		<script
+			src="https://kit.fontawesome.com/bdb2f8ae99.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- @include "nav.kit" -->
+		<!-- @include "header.kit" -->
+		<main class="main">
+			<div class="wrapper">
+				<section class="main__products">
+					<h2 class="main__title">Our Products</h2>
+					<div class="main__products-box">
+						<div class="main__product">
+							<div class="main__product-left">
+								<p class="main__productname">Pedigree</p>
+								<p class="main__productdesc">Best food for your best friend</p>
+								<button class="main__button">get it</button>
+							</div>
+							<div class="main__product-right">
+								<img
+									src="./dist/img/pedigree.png"
+									alt="Pedigree food for dogs"
+									class="main__productimg"
+								/>
+							</div>
+						</div>
+						<div class="main__product">
+							<div class="main__product-left">
+								<p class="main__productname">Reveal</p>
+								<p class="main__productdesc">Best food for your cat</p>
+								<button class="main__button">get it</button>
+							</div>
+							<div class="main__product-right">
+								<img
+									src="./dist/img/catfood.png"
+									alt="Reveal food for cat"
+									class="main__productimg"
+								/>
+							</div>
+						</div>
+						<div class="main__product">
+							<div class="main__product-left">
+								<p class="main__productname">DogToys</p>
+								<p class="main__productdesc">Toy for your dog.</p>
+								<button class="main__button">get it</button>
+							</div>
+							<div class="main__product-right">
+								<img
+									src="./dist/img/dogtoy.png"
+									alt="Dog holding toy in his mount"
+									class="main__productimg"
+								/>
+							</div>
+						</div>
+						<div class="main__product">
+							<div class="main__product-left">
+								<p class="main__productname">Aquatel</p>
+								<p class="main__productdesc">Aquarium set for start</p>
+								<button class="main__button">get it</button>
+							</div>
+							<div class="main__product-right">
+								<img
+									src="./dist/img/aquarium.png"
+									alt="Aquarium"
+									class="main__productimg"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="main__videobox">
+				<video autoplay loop muted class="main__video">
+					<source src="./dist/video/dogvideo.mp4" type="video/mp4" />
+				</video>
+			</section>
+			<div class="wrapper">
+				<section class="main__categories">
+					<h2 class="main__title">pet categories</h2>
+					<div class="main__categoriesbox">
+						<ul class="main__categories-list">
+							<li class="main__categories-item">
+                                <a href="#" class="main__categories-link"><p class="main__categories-text">dog</p></a>
+                                <img class="main__categories-img" src="./dist/img/dog1.jpg" alt="Dog Photo">
+							</li>
+							<li class="main__categories-item">
+                                <a href="#" class="main__categories-link main__categories-link--cat"><p class="main__categories-text">cat</p></a>
+                                <img class="main__categories-img" src="./dist/img/cat.jpg" alt="Cat Photo">
+							</li>
+							<li class="main__categories-item">
+                                <a href="#" class="main__categories-link main__categories-link--bird"><p class="main__categories-text">bird</p></a>
+                                <img class="main__categories-img" src="./dist/img/bird.jpeg" alt="Bird Photo">
+							</li>
+							<li class="main__categories-item">
+                                <a href="#" class="main__categories-link main__categories-link--fish"><p class="main__categories-text">aquarium & pond</p></a>
+                                <img class="main__categories-img" src="./dist/img/fish.jpg" alt="Fish Photo">
+							</li>
+							<li class="main__categories-item">
+                                <a href="#" class="main__categories-link main__categories-link--smallpet"><p class="main__categories-text">small pet</p></a>
+                                <img class="main__categories-img" src="./dist/img/smallpet.jpg" alt="Small Pet Photo">
+							</li>
+							<li class="main__categories-item">
+                                <a href="#" class="main__categories-link main__categories-link--reptile"
+                                ><p class="main__categories-text">reptile</p></a
+								>
+                                <img class="main__categories-img" src="./dist/img/reptile.jfif" alt="Reptile Photo">
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<section style="height: 100vh"></section>
+		</main>
+		<script src="./dist/js/index.min.js"></script>
+	</body>
 </html>

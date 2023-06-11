@@ -69,6 +69,7 @@
 		padding: 1em 0;
 		font-size: 3.2rem;
 		text-align: center;
+		text-transform: uppercase;
 	}
 
 	&__productname {
@@ -78,5 +79,74 @@
 
 	&__productdesc {
 		padding: 0.25em 0 1em 0;
+	}
+
+	&__videobox {
+		padding: 4em 0 0 0;
+		height: 70vh;
+	}
+
+	&__video {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&__categories {
+		&box {
+			display: flex;
+			justify-content: center;
+		}
+
+		&-list {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			list-style-type: none;
+			width: 100%;
+		}
+
+		&-item {
+			position: relative;
+			margin: 1em;
+			overflow: hidden;
+		}
+
+		&-img {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+			transition: transform 1s;
+		}
+
+		&-link {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			width: 100%;
+			height: 300px;
+			font-size: 2rem;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $text-color-one;
+			transition: background-color 1s;
+
+			&:hover + img {
+				transform: scale(1.05) translateX(5px);
+			}
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+		}
+
+		&-text {
+			padding: 0.25em 0.5em;
+			margin-bottom: 1em;
+			background-color: #fff;
+		}
 	}
 }
