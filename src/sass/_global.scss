@@ -1,5 +1,16 @@
+@use "colors.scss" as *;
+
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
+}
+
+.footer {
+    display: grid;
+    place-items: center;
+    height: 90px;
+    font-size: 2rem;
+    color: $text-color-four;
+    background-color: $text-color-two;
 }

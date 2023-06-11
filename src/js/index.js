@@ -1,4 +1,5 @@
 const header = document.querySelector(".header");
+const footerYear = document.querySelector(".footer__year")
 
 const changePictureOfHeader = () => {
 	if (window.screen.width < 992) {
@@ -8,4 +9,11 @@ const changePictureOfHeader = () => {
 	}
 };
 
+const setFooterYear = () => {
+	const date = new Date()
+
+	footerYear.textContent = date.getFullYear();
+}
+
 changePictureOfHeader();
+setFooterYear()

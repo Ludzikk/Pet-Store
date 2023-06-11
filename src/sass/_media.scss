@@ -6,6 +6,13 @@
 				grid-template-rows: 1fr 1fr;
 			}
 		}
+
+		&__blog {
+			&-list {
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+			}
+		}
 	}
 }
 
@@ -14,7 +21,14 @@
 		&__categories {
 			&-list {
 				grid-template-columns: 1fr 1fr 1fr;
-				grid-template-rows: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+			}
+		}
+
+		&__blog {
+			&-list {
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr;
 			}
 		}
 	}
