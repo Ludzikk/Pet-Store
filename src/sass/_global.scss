@@ -14,3 +14,11 @@
     color: $text-color-four;
     background-color: $text-color-two;
 }
+
+.hidden {
+    display: none;
+}
+
+.body-scroll {
+    overflow-y: hidden;
+}

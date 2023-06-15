@@ -36,6 +36,7 @@
 		padding: 0.4em;
 		border: none;
 		background-color: transparent;
+		cursor: pointer;
 	}
 
 	&__logo {
@@ -47,5 +48,35 @@
 		&-span {
 			color: $text-color-three;
 		}
+	}
+}
+
+.nav-side {
+	display: flex;
+	flex-direction: column;
+	padding: 4em 1em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 300px;
+	background-color: $text-color-one;
+	color: $text-color-four;
+	z-index: 100;
+
+	&__category {
+		padding: 1em 0;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+	}
+
+	&__bg {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: 99;
 	}
 }
