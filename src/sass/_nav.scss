@@ -54,20 +54,28 @@
 .nav-side {
 	display: flex;
 	flex-direction: column;
-	padding: 4em 1em;
+	padding: 4em 0;
 	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	width: 300px;
+	max-width: 300px;
+	width: 100%;
 	background-color: $text-color-one;
 	color: $text-color-four;
 	z-index: 100;
 
 	&__category {
-		padding: 1em 0;
+		padding: 1em;
 		font-size: 2.4rem;
 		text-transform: uppercase;
+		text-decoration: none;
+		color: $text-color-four;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: $text-color-two;
+		}
 	}
 
 	&__bg {
@@ -78,5 +86,28 @@
 		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 99;
+	}
+
+	&__closebutton {
+		margin: 1em;
+		padding: 0.4em 0.8em;
+		margin-left: auto;
+		font-size: 2rem;
+		border: none;
+		background: none;
+		color: $text-color-four;
+		cursor: pointer;
+	}
+
+	&__iconbox {
+		display: flex;
+		justify-content: space-around;
+		padding: 1em;
+	}
+
+	&__icon {
+		padding: 0.5em;
+		font-size: 2.6rem;
+		color: $text-color-four;
 	}
 }

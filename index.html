@@ -25,7 +25,9 @@
 			<button class="nav__hamburger">
 				<i class="fa-solid fa-bars-staggered nav__icon"></i>
 			</button>
-			<a class="nav__logo" href="#">Pet<span class="nav__logo-span">Store</span></a>
+			<a class="nav__logo" href="#"
+				>Pet<span class="nav__logo-span">Store</span></a
+			>
 			<ul class="nav__list">
 				<li class="nav__item">
 					<a href="#" class="nav__link">
@@ -46,12 +48,28 @@
 	<button class="nav-side__closebutton">
 		<i class="fa-solid fa-x nav-side__closebutton-icon"></i>
 	</button>
-	<p class="nav-side__category">dog</p>
-	<p class="nav-side__category">cat</p>
-	<p class="nav-side__category">aquarium & pond</p>
-	<p class="nav-side__category">reptile</p>
-	<p class="nav-side__category">bird</p>
-	<p class="nav-side__category">small pet</p>
+	<a href="./colections/dog.html" class="nav-side__category">dog</a>
+	<a href="./colections/cat.html" class="nav-side__category">cat</a>
+	<a href="./colections/aquariumpond.html" class="nav-side__category"
+		>aquarium & pond</a
+	>
+	<a href="./colections/reptile.html" class="nav-side__category">reptile</a>
+	<a href="./colections/bird.html" class="nav-side__category">bird</a>
+	<a href="./colections/smallpet.html" class="nav-side__category">small pet</a>
+	<div class="nav-side__iconbox">
+		<a href="https://github.com/Ludzikk" class="nav-side__icon">
+			<i class="fa-brands fa-github"></i>
+		</a>
+		<a href="https://www.instagram.com/ludzikdev/" class="nav-side__icon">
+			<i class="fa-brands fa-instagram"></i>
+		</a>
+		<a
+			href="https://www.youtube.com/channel/UCSMZSZybZlcYJ7klgounV_w"
+			class="nav-side__icon"
+		>
+			<i class="fa-brands fa-youtube"></i>
+		</a>
+	</div>
 </nav>
 <div class="nav-side__bg hidden"></div>
 
@@ -67,7 +85,9 @@
 							<div class="main__product-left">
 								<p class="main__productname">Pedigree</p>
 								<p class="main__productdesc">Best food for your best friend</p>
-								<button class="main__button">get it</button>
+								<button class="main__button main__button--buy">
+									<p class="main__button-text">get it</p>
+								</button>
 							</div>
 							<div class="main__product-right">
 								<img
@@ -81,7 +101,9 @@
 							<div class="main__product-left">
 								<p class="main__productname">Reveal</p>
 								<p class="main__productdesc">Best food for your cat</p>
-								<button class="main__button">get it</button>
+								<button class="main__button main__button--buy">
+									<p class="main__button-text">get it</p>
+								</button>
 							</div>
 							<div class="main__product-right">
 								<img
@@ -95,7 +117,9 @@
 							<div class="main__product-left">
 								<p class="main__productname">DogToys</p>
 								<p class="main__productdesc">Toy for your dog.</p>
-								<button class="main__button">get it</button>
+								<button class="main__button main__button--buy">
+									<p class="main__button-text">get it</p>
+								</button>
 							</div>
 							<div class="main__product-right">
 								<img
@@ -109,7 +133,9 @@
 							<div class="main__product-left">
 								<p class="main__productname">Aquatel</p>
 								<p class="main__productdesc">Aquarium set for start</p>
-								<button class="main__button">get it</button>
+								<button class="main__button main__button--buy">
+									<p class="main__button-text">get it</p>
+								</button>
 							</div>
 							<div class="main__product-right">
 								<img
@@ -122,10 +148,12 @@
 					</div>
 				</section>
 			</div>
-			<section class="main__videobox">
-				<video playsinline autoplay loop muted class="main__video">
-					<source src="./dist/video/dogvideo.mp4" type="video/mp4" />
-				</video>
+			<section class="main__gifbox">
+				<img
+					src="./dist/img/maingif.gif"
+					alt="Dog smilling"
+					class="main__gif"
+				/>
 			</section>
 			<div class="wrapper">
 				<section class="main__categories">
@@ -133,7 +161,7 @@
 					<div class="main__categoriesbox">
 						<ul class="main__categories-list">
 							<li class="main__categories-item">
-								<a href="#" class="main__categories-link"
+								<a href="./colections/dog.html" class="main__categories-link"
 									><p class="main__categories-text">dog</p></a
 								>
 								<img
@@ -144,7 +172,7 @@
 							</li>
 							<li class="main__categories-item">
 								<a
-									href="#"
+									href="./colections/cat.html"
 									class="main__categories-link main__categories-link--cat"
 									><p class="main__categories-text">cat</p></a
 								>
@@ -156,7 +184,7 @@
 							</li>
 							<li class="main__categories-item">
 								<a
-									href="#"
+									href="./colections/bird.html"
 									class="main__categories-link main__categories-link--bird"
 									><p class="main__categories-text">bird</p></a
 								>
@@ -168,7 +196,7 @@
 							</li>
 							<li class="main__categories-item">
 								<a
-									href="#"
+									href="./colections/aquariumpond.html"
 									class="main__categories-link main__categories-link--fish"
 									><p class="main__categories-text">aquarium & pond</p></a
 								>
@@ -180,7 +208,7 @@
 							</li>
 							<li class="main__categories-item">
 								<a
-									href="#"
+									href="./colections/smallpet.html"
 									class="main__categories-link main__categories-link--smallpet"
 									><p class="main__categories-text">small pet</p></a
 								>
@@ -192,7 +220,7 @@
 							</li>
 							<li class="main__categories-item">
 								<a
-									href="#"
+									href="./colections/reptile.html"
 									class="main__categories-link main__categories-link--reptile"
 									><p class="main__categories-text">reptile</p></a
 								>
@@ -215,7 +243,9 @@
 							class="main__input"
 							placeholder="Enter your email"
 						/>
-						<button class="main__button">Subscribe</button>
+						<button class="main__button main__button--subscribe">
+							Subscribe
+						</button>
 					</div>
 				</div>
 			</section>
