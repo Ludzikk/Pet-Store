@@ -172,7 +172,9 @@
 	}
 
 	&__input {
+		padding: 0.2em;
 		font-size: 1.8rem;
+		border: none;
 	}
 
 	&__blog {
@@ -209,12 +211,12 @@
 	&__itemlist {
 		display: flex;
 		align-items: flex-end;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 		padding: 2em 0;
 		text-align: center;
 		list-style-type: none;
-		
+
 		&-item {
 			margin: 1em auto;
 			width: 250px;
@@ -246,10 +248,10 @@
 	&__productscount {
 		font-size: 2.2rem;
 	}
-}
 
-select {
-	padding: 0.2em 4em 0.2em 0.2em;
-	font-size: 1.8rem;
-	outline: none;
+	&__select {
+		padding: 0.2em 4em 0.2em 0.2em;
+		font-size: 1.8rem;
+		outline: none;
+	}
 }

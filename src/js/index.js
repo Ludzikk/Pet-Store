@@ -6,6 +6,9 @@ const navSideBtn = document.querySelector(".nav__hamburger");
 const navSideCloseBtn = document.querySelector(".nav-side__closebutton");
 const productsCount = document.querySelector(".main__productscount");
 const productsSort = document.querySelector("#sort");
+const catLinkBtns = document.querySelectorAll(".main__button--cat");
+const aquariumLinkBtns = document.querySelectorAll(".main__button--aquarium");
+const dogLinkBtns = document.querySelectorAll(".main__button--dog");
 
 const changePictureOfHeader = () => {
 	if (window.screen.width < 992) {
@@ -44,13 +47,17 @@ const changeSortType = () => {
 		case "lowtohigh":
 			productsItem.forEach((item) => {
 				const productItemLenght = item.textContent.length;
-				item.parentElement.style.order = `${parseInt(Number(item.textContent.slice(0, productItemLenght - 1)))}`;
+				item.parentElement.style.order = `${parseInt(
+					Number(item.textContent.slice(0, productItemLenght - 1))
+				)}`;
 			});
 			break;
 		case "hightolow":
 			productsItem.forEach((item) => {
 				const productItemLenght = item.textContent.length;
-				item.parentElement.style.order = `-${parseInt(Number(item.textContent.slice(0, productItemLenght - 1)))}`;
+				item.parentElement.style.order = `-${parseInt(
+					Number(item.textContent.slice(0, productItemLenght - 1))
+				)}`;
 			});
 			break;
 		default:
@@ -58,8 +65,29 @@ const changeSortType = () => {
 	}
 };
 
+// const addListenersToButtons = () => {
+// 	dogLinkBtns.forEach((btn) =>
+// 		btn.addEventListener("click", () => {
+// 			window.open("./colections/dog.html");
+// 		})
+// 	);
+
+// 	catLinkBtns.forEach((btn) =>
+// 		btn.addEventListener("click", () => {
+// 			window.open("./colections/cat.html");
+// 		})
+// 	);
+
+// 	aquariumLinkBtns.forEach((btn) =>
+// 		btn.addEventListener("click", () => {
+// 			window.open("./colections/aquariumpond.html");
+// 		})
+// 	);
+// };
+
 changePictureOfHeader();
 setFooterYear();
+// addListenersToButtons();
 
 if (
 	document.title.includes("Dog") ||
