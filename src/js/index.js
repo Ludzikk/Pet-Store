@@ -5,6 +5,7 @@ const navSideBg = document.querySelector(".nav-side__bg");
 const navSideBtn = document.querySelector(".nav__hamburger");
 const navSideCloseBtn = document.querySelector(".nav-side__closebutton");
 const productsCount = document.querySelector(".main__productscount");
+const productsSort = document.querySelector("#sort");
 
 const changePictureOfHeader = () => {
 	if (window.screen.width < 992) {
@@ -30,13 +31,47 @@ const checkProductsCount = () => {
 	productsCount.textContent = `${productsCount.parentElement.nextElementSibling.childElementCount} products`;
 };
 
+const changeSortType = () => {
+	const productsSortType = productsSort.value;
+	const productsItem = document.querySelectorAll(".main__itemlist-price");
+	switch (productsSortType) {
+		case "az":
+			console.log("a-z");
+			break;
+		case "za":
+			console.log("z-a");
+			break;
+		case "lowtohigh":
+			productsItem.forEach((item) => {
+				const productItemLenght = item.textContent.length;
+				item.parentElement.style.order = `${parseInt(Number(item.textContent.slice(0, productItemLenght - 1)))}`;
+			});
+			break;
+		case "hightolow":
+			productsItem.forEach((item) => {
+				const productItemLenght = item.textContent.length;
+				item.parentElement.style.order = `-${parseInt(Number(item.textContent.slice(0, productItemLenght - 1)))}`;
+			});
+			break;
+		default:
+			console.log("Wrong value");
+	}
+};
+
 changePictureOfHeader();
 setFooterYear();
 
-if(document.title.includes("Dog") || document.title.includes("Cat") || document.title.includes("Aquarium") || document.title.includes("Reptile") || document.title.includes("Small") || document.title.includes("Bird")) {
+if (
+	document.title.includes("Dog") ||
+	document.title.includes("Cat") ||
+	document.title.includes("Aquarium") ||
+	document.title.includes("Reptile") ||
+	document.title.includes("Small") ||
+	document.title.includes("Bird")
+) {
 	checkProductsCount();
-} else {
-	console.log("Not Running Function");
+
+	productsSort.addEventListener("click", changeSortType);
 }
 
 navSideBtn.addEventListener("click", toggleNavSide);
