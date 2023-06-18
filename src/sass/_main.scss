@@ -254,4 +254,59 @@
 		font-size: 1.8rem;
 		outline: none;
 	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 4em 1em;
+		height: 1000px;
+
+		&-left, &-right {
+			width: 100%;
+		}
+
+		&-right {
+			text-align: center;
+			padding: 1em 0;
+		}
+
+		&-img {
+			width: 100%;
+			height: 100%;
+		}
+		
+		&-company {
+			font-size: 3rem;
+			padding: 0.1em 0;
+		}
+
+		&-desc {
+			font-size: 2rem;
+			padding: 0.1em 0 0.5em 0;
+		}
+
+		&-rate {
+			position: relative;
+			display: inline;
+			
+			&-bg {
+				position: absolute;
+				right: 0;
+				height: 100%;
+				background-color: $text-color-four;
+			}
+		}
+
+		&-icon {
+			color: black;
+		}
+
+		&-price {
+			font-size: 1.8rem;
+			padding: 0.4em 0;
+			color: $price-color;
+		}
+	}
 }

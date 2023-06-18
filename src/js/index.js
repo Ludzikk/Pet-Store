@@ -9,14 +9,7 @@ const productsSort = document.querySelector("#sort");
 const catLinkBtns = document.querySelectorAll(".main__button--cat");
 const aquariumLinkBtns = document.querySelectorAll(".main__button--aquarium");
 const dogLinkBtns = document.querySelectorAll(".main__button--dog");
-
-const changePictureOfHeader = () => {
-	if (window.screen.width < 992) {
-		header.classList.add("picture-anim-small");
-	} else {
-		header.classList.add("picture-anim-big");
-	}
-};
+const rateStars = document.querySelector(".main__item-rate-bg")
 
 const setFooterYear = () => {
 	const date = new Date();
@@ -65,29 +58,7 @@ const changeSortType = () => {
 	}
 };
 
-// const addListenersToButtons = () => {
-// 	dogLinkBtns.forEach((btn) =>
-// 		btn.addEventListener("click", () => {
-// 			window.open("./colections/dog.html");
-// 		})
-// 	);
-
-// 	catLinkBtns.forEach((btn) =>
-// 		btn.addEventListener("click", () => {
-// 			window.open("./colections/cat.html");
-// 		})
-// 	);
-
-// 	aquariumLinkBtns.forEach((btn) =>
-// 		btn.addEventListener("click", () => {
-// 			window.open("./colections/aquariumpond.html");
-// 		})
-// 	);
-// };
-
-changePictureOfHeader();
 setFooterYear();
-// addListenersToButtons();
 
 if (
 	document.title.includes("Dog") ||
@@ -100,7 +71,7 @@ if (
 	checkProductsCount();
 
 	productsSort.addEventListener("click", changeSortType);
-}
+} 
 
 navSideBtn.addEventListener("click", toggleNavSide);
 navSideCloseBtn.addEventListener("click", toggleNavSide);
